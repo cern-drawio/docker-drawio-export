@@ -47,7 +47,7 @@ RUN apt-get update -y && \
     apt-get autoremove -y --purge && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    git clone --depth=1 https://github.com/cern-drawio/draw-image-export2.git
+    git clone --single-branch --branch debug --depth=1 https://github.com/cern-drawio/draw-image-export2.git
 
 WORKDIR draw-image-export2
 
